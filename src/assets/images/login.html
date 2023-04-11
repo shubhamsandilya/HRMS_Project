@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://cutm.icloudems.com/corecampus/index.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="google-signin-client_id" content="988646651929-upd3mlsr7aoatcdpigr5cp17jdei1ojj.apps.googleusercontent.com"> -->
+  <!--     <meta name="google-signin-client_id" content="974021477739-tbbb8s8jeop7mo11r8a77854ak4rcn35.apps.googleusercontent.com">
+ -->
+  <meta name="google-signin-client_id" content="1096316775342-53jo2311qjmojsl82dl2il76jvvbc3gs.apps.googleusercontent.com">
+
+  <meta name="keywords" content="admin template, angular admin template, bootstrap admin template, modern admin template, modern design admin template, dashboard template, responsive admin template, angular web app, crypto dashboard, bitcoin dashboard">
+  <title>A complete web enabled Education Administration Software</title><!-- GLOBAL VENDORS-->
+  <link rel="stylesheet" href="./login_files/css" media="all">
+  <link href="./login_files/icon" rel="stylesheet">
+  <link href="./login_files/all.min.css" rel="stylesheet">
+  <link href="./login_files/themify-icons.css" rel="stylesheet">
+  <link href="./login_files/line-awesome.min.css" rel="stylesheet"><!-- PAGE LEVEL VENDORS-->
+  <link href="./login_files/select2.min.css" rel="stylesheet">
+
+  <!-- THEME STYLES-->
+  <script src="./login_files/jquery.min.js.download"></script>
+  <link href="./login_files/toastr.min.css" rel="stylesheet">
+  <link href="./login_files/app.min.css" rel="stylesheet"><!-- PAGE LEVEL STYLES-->
+  <script src="./login_files/toastr.min.js.download"></script>
+  <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+  <script src="./login_files/platform.js.download" async="" defer=""></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="./login_files/css(1)">
+
+  
+
+
+  <style>
+    .login-page {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1 0 auto;
+      height: 100%;
+      background: url('https://corecampus.s3.ap-south-1.amazonaws.com/01.jpeg') no-repeat center left;
+      background-size: cover;
+
+    }
+
+    .login-page:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .login-content {
+      width: 500px;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 10;
+      position: relative;
+    }
+
+    .login-content>.card {
+      margin: 0;
+      height: 100%;
+      min-height: 100%;
+      box-shadow: none;
+      border-radius: 0;
+      background-color: #fff;
+    }
+
+    .auth-brand-text {
+      font-size: 24px;
+    }
+
+    .auth-welcome-box {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 20px;
+      max-width: 100%;
+      color: #eee;
+      z-index: 2;
+      padding: 2rem;
+    }
+
+    .auth-features-box {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .auth-features-box>div {
+      padding: 5px;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .auth-features-box .features-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      font-size: 24px;
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    @media (max-width: 767.98px) {
+      .login-content {
+        width: 100%;
+      }
+    }
+
+    .glogin {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    /*Google button css*/
+    @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+    .google-btn {
+      width: 184px;
+      height: 42px;
+      background-color: #4285f4;
+      border-radius: 2px;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+
+    .google-btn .google-icon-wrapper {
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #fff;
+    }
+
+    .google-btn .google-icon {
+      position: absolute;
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .google-btn .btn-text {
+      float: right;
+      margin: 11px 11px 0 0;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+    }
+
+    .google-btn:hover {
+      box-shadow: 0 0 6px #4285f4;
+    }
+
+    .google-btn:active {
+      background: #1669F2;
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+  <div class="login-page">
+    <div class="auth-welcome-box text-white pl-lg-2 d-none d-lg-flex">
+      <!-- <div><a class="btn btn-link home-link text-white-50 pl-lg-5" href="index.html"><span class="btn-icon"><i class="ti-arrow-left font-20"></i>Go Home</span></a></div> -->
+      <div class="pl-lg-5">
+        <!-- <h4 class="font-40 mb-4"><img src="https://icloudems.com/wp-content/uploads/2019/08/cloudems-logo.png">  </h4> -->
+        <h4 class="font-40 mb-4" style="cursor: pointer" onclick="window.open(&#39;https://www.icloudems.com&#39;, &#39;_blank&#39;);"><img src="./login_files/cnv_logo_short.png"> iCloudEMS </h4>
+
+      </div>
+      <div class="pl-lg-5" style="margin-top: -140px">
+                  <h2 class="mb-4">Powering student-centric education in universities &amp; colleges</h2>
+
+          <p><em>We help universities and colleges of all sizes and streams run better – from admissions to academics, back office to accreditations, desktop to mobiles – We empower students, faculty and management to collaborate efficiently and use insights effectively, benchmarking quality education while creating personalized learning experience</em></p>
+                <!-- <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>culpa qui officia deserunt mollit anim id est.</p> -->
+      </div>
+      <div class="pl-lg-5 font-13"><span class="text-white-50">
+                      <p class="mb-0">A market leader in end-to-end unified education management solutions</p><br>
+                    <a class="text-white-50" href="https://www.icloudems.com/privacy-policy">2023 © All rights reserved &amp; Privacy Policy</a>
+        </span><span class="pl-5"><a class="text-white" href="https://cutm.icloudems.com/corecampus/index.php#" style="border-bottom: 1px solid;"></a><a class="ml-3 text-white" href="https://cutm.icloudems.com/corecampus/index.php#" style="border-bottom: 1px solid;"></a></span></div>
+    </div>
+    <form method="POST" action="https://cutm.icloudems.com/corecampus/checkuser1.php" id="login-form" novalidate="novalidate">
+      <input type="hidden" name="branchid" value="1">
+      <input id="hiddeninput" type="hidden" name="typefunc">
+      <div class="login-content">
+        <div class="card">
+          <div class="card-body bg-white p-5">
+                          <div class="dropdown " style="position:absolute;top:0;right:0;padding: 20px; margin-right: 21px">
+                <button class="btn btn-primary btn-floating" title="Click to View More Links" type="button" data-toggle="dropdown" aria-expanded="false"><i class="ti-more-alt" style="-webkit-box-shadow: 10px 10px 36px -17px rgba(0,0,0,0.75);
+                                -moz-box-shadow: 10px 10px 36px -17px rgba(0,0,0,0.75);
+                                box-shadow: 10px 10px 36px -17px rgba(0,0,0,0.75);
+                                "></i></button>
+                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                    <a class="dropdown-item" href="https://cutm.icloudems.com/corecampus/admin/openbiblio1/shared/biblio_search_new_web.php" title="Click to Open"><i class="fas fa-link"></i> &nbsp; OPAC</a>
+
+                </div>
+              </div>
+            
+            <center>
+                              <img height="15%" width="50%" alt="Cloud EMS " src="./login_files/cutm.jpg">
+                            <!-- <div class="font-18 text-center mb-5">Login to Your account</div> -->
+            </center>
+
+            <div class="mb-4">
+              <div class="md-form mb-0"><input class="md-form-control valid" type="text" name="userid" id="useriid" onblur="verify_branch(this.value);" aria-invalid="false"><label class="active">Login Id</label></div>
+            </div>
+            <div class="mb-4" id="pssblk">
+              <div class="md-form mb-0"><input class="md-form-control valid" type="password" name="pass_word" id="actlpass" aria-invalid="false"><label id="passlabel" class="active">Password</label></div>
+            </div>
+
+            <div class="mb-4" id="otpInputtr" style="display:none">
+              <div class="md-form mb-0"><input class="md-form-control" type="password" name="uotpid" id="otpinp"><label>Verification code</label></div>
+            </div>
+
+
+
+            <div class="mb-4">
+              <select name="branchid" class="md-form-control branch select_search select2-hidden-accessible" border="0" id="selectbrid" style="width: 100%" data-select2-id="selectbrid" tabindex="-1" aria-hidden="true">
+Array
+(
+    [status] =&gt; 1
+    [data] =&gt; 17
+)
+<option value="17" selected="" data-select2-id="3">School Of Engineering &amp; Technology, Paralakhemundi</option>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-selectbrid-container"><span class="select2-selection__rendered" id="select2-selectbrid-container" role="textbox" aria-readonly="true" title="School Of Engineering &amp; Technology, Paralakhemundi">School Of Engineering &amp; Technology, Paralakhemundi</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            
+
+            <div class="flexbox mb-5">
+              <a href="https://cutm.icloudems.com/corecampus/forget_login_credential.php">Forgot password?</a>
+              <div id="formsubmitbutton">
+                <button id="psslogin" class="btn btn-primary" style="min-width: 100px" onclick="return ButtonClicked()">LOGIN &nbsp;<i class="fas fa-sign-in-alt"></i></button>
+              </div>
+              <div id="buttonreplacement" style="margin-left:30px; display:none;">
+                <!-- Logging In... <i class="fas fa-circle-notch fa-spin"></i> -->
+                <img src="./login_files/login.gif" alt="" srcset="" style="width:80px;margin-top:-20px">
+              </div>
+            </div>
+
+
+            <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+
+
+
+            
+            <button id="otplogin" onclick="hitotp()" type="button" alt="Submit" border="0" style="display:none" class="btn  btn-success btn-block mb-4">Proceed <i class="fa fa-sign-in"></i></button>
+
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+                <div class="google-btn" onclick="location.href=&#39;https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=offline&amp;client_id=1096316775342-53jo2311qjmojsl82dl2il76jvvbc3gs.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fcutm.icloudems.com%2Fcorecampus%2Findex.php&amp;state&amp;scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar&amp;approval_prompt=force&amp;include_granted_scopes=true&#39;">
+        <div class="google-icon-wrapper">
+          <img class="google-icon" src="./login_files/Google__G__Logo.svg">
+        </div>
+        <p class="btn-text"><b>Sign in with Google</b></p>
+      </div>              </div>
+              <div class="col-md-6">
+                              </div>
+            </div>
+
+
+
+
+
+    
+    <!-- <p class="mt-5 mb-4 text-muted text-center">Or login with social networks</p>
+                        <div class="mb-5"><button class="btn btn-facebook btn-block mb-4"><span class="btn-icon"><i class="fab fa-facebook-f"></i>Facebook</span></button><button class="btn btn-twitter btn-block mb-4"><span class="btn-icon"><i class="fab fa-twitter"></i>Twitter</span></button><button class="btn btn-google btn-block"><span class="btn-icon"><i class="fab fa-google-plus-g"></i>Google</span></button></div>
+                        <div class="text-center">Don't have an account?<a class="ml-2" href="sign-up.html">Create account</a></div> -->
+  </div>
+  </div>
+  </div></form>
+
+
+  </div><!-- BEGIN: Page backdrops-->
+  <div class="sidenav-backdrop backdrop"></div>
+  <div class="preloader-backdrop" style="display: none;">
+    <div class="page-preloader">Loading</div>
+  </div><!-- END: Page backdrops-->
+  <!-- CORE PLUGINS-->
+  <script src="./login_files/jquery.min.js.download"></script>
+  <script src="./login_files/bootstrap.bundle.min.js.download"></script><!-- PAGE LEVEL PLUGINS-->
+  <script src="./login_files/jquery.validate.min.js.download"></script><!-- CORE SCRIPTS-->
+  <script src="./login_files/app.min.js.download"></script><!-- PAGE LEVEL SCRIPTS-->
+  <script src="./login_files/select2.full.min.js.download"></script>
+  <script>
+    //   function setstyle() {
+    //                     setTimeout(function(){ 
+
+    //       $(".abcRioButton").addClass("glogin");
+
+    //     let myElement = document.querySelector(".abcRioButton");
+    // myElement.style.minWidth = "100%";
+
+    //  }, 3000);
+
+    //   }
+    $(function() {
+      $(".branch").select2();
+
+    });
+
+
+    // }
+    var FirstLoading = true;
+
+    function RestoreSubmitButton() {
+      if (FirstLoading) {
+        FirstLoading = false;
+        return;
+      }
+      document.getElementById("reset").style.display = ""; // to display
+      document.getElementById("buttonreplacement").style.display = "none"; // to undisplay
+    }
+
+    function ButtonClicked() {
+      var form = $("#login-form");
+      if (form.valid() == true) {
+        document.getElementById("formsubmitbutton").style.display = "none"; // to undisplay
+        document.getElementById("buttonreplacement").style.display = ""; // to display 
+      }
+
+    }
+
+    $(function() {
+      $('#login-form').validate({
+        rules: {
+          userid: {
+            required: true,
+          },
+          pass_word: {
+            required: true
+          },
+          branchid: {
+            required: true
+          }
+        },
+
+
+        errorClass: 'invalid-feedback',
+        validClass: 'valid-feedback',
+        errorPlacement: function(error, element) {
+          if (element.hasClass('md-form-control')) {
+            error.insertAfter(element.closest('.md-form'));
+          } else {
+            error.insertAfter(element);
+          }
+        },
+        highlight: function(e) {
+          $(e).addClass("invalid").removeClass('valid');
+        },
+        unhighlight: function(e) {
+          $(e).removeClass("invalid").addClass('valid');
+        },
+      });
+    });
+
+
+
+    function verify_branch(username, password = "") {
+
+      if(username == "") {
+        alert("Error: Username cannot be blank!");
+        document.getElementById('useriid').value='';
+        return false;
+      }
+      // re = /^\w+$/;
+        var re = /^[a-zA-Z0-9._/@]*$/;
+
+      if(!re.test(username)) {
+        alert("Error: Username must contain only letters, numbers and underscores!");
+        document.getElementById('useriid').value='';
+        return false;
+      }
+      
+      if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+      } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          document.getElementById("selectbrid").innerHTML = xmlhttp.responseText;
+        }
+      }
+
+      xmlhttp.open("GET", "getbranch.php?username=" + username + "&password=" + password, true);
+      xmlhttp.send();
+
+
+
+    }
+
+    function verify_branchwith_pass(pass) {
+      let uname = window.document.login.userid.value;
+
+      if (pass != "" && uname != "") {
+        verify_branch(uname, pass);
+      }
+    }
+
+    function myFunction_showhideUI() {
+      var x = document.getElementById("pssblk");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+
+      // var bck = document.getElementById("logbtn");
+      // var vrf = document.getElementById("otplogin"); 
+      if (document.getElementById("logbtn").innerHTML == "Back" && document.getElementById("otplogin").innerHTML == 'Verify')
+        $("#otpinp").hide();
+
+      var passblk = document.getElementById("psslogin");
+      if (passblk.style.display === "none") {
+        passblk.style.display = "block";
+      } else {
+        passblk.style.display = "none";
+      }
+
+      var otpblk = document.getElementById("otplogin");
+      if (otpblk.style.display === "none") {
+        otpblk.style.display = "block";
+        document.getElementById("logbtn").innerHTML = "Back";
+
+      } else {
+        document.getElementById("logbtn").innerHTML = "Login with OTP <i class='fas fa-mobile-alt'></i>";
+
+        otpblk.style.display = "none";
+      }
+
+    }
+
+
+    function hitotp() {
+
+      if ($("#useriid").val() == '') {
+        Command: toastr["error"]("Please enter UserId");
+
+      }
+      else {
+
+
+        document.getElementById("hiddeninput").value = "otpproceed";
+        document.getElementById("hiddeninput").innerHTML = "otpproceed";
+        document.getElementById("login-form").submit();
+      }
+    }
+
+    function hitotp_old() {
+      //alert(document.getElementById("otplogin").value);
+      if (document.getElementById("otplogin").textContent == "Verify") {
+        //alert("eh");
+                var cliname = "Y3V0bQ==";
+        var xuser = document.getElementById("useriid").value;
+        var xotp = document.getElementById("otpinp").value;
+
+        if (xuser == '' || xuser == null) {
+          // alert("Please enter valid Username");
+          Command: toastr["error"]("Please enter valid Username")
+        }
+        else {
+          var http2 = new XMLHttpRequest();
+          var url = '../react_app_api/android_webservices/student_app/common/authenticateNew.php';
+          var params = 'nick=' + xuser + '&isOTPAuth=true&otp=' + xotp + '&code=' + cliname;
+          http2.open('POST', url, true);
+
+          //Send the proper header information along with the request
+          http2.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+          http2.onreadystatechange = function() { //Call a function when the state changes.
+            if (http2.readyState == 4 && http2.status == 200) {
+              var myArr2 = JSON.parse(http2.responseText);
+              if (myArr2.login.status) {
+                var x = document.getElementById("pssblk");
+                x.style.display = "block";
+                x.style.visibility = "hidden";
+                x.style.position = "absolute";
+                document.getElementById("actlpass").value = "1234";
+                //document.getElementById("actlpass").innerHTML="1234";
+                document.getElementById("login-form").submit();
+              } else {
+                // alert("Invalid OTP");
+                Command: toastr["error"]("Invalid OTP")
+
+              }
+            }
+          }
+          http2.send(params);
+        }
+      } else {
+                var cliname = "Y3V0bQ==";
+        var xuser = document.getElementById("useriid").value;
+        if (xuser == '' || xuser == null) {
+          Command: toastr["error"]("Please enter valid Username")
+        }
+        else {
+          //alert("here");
+          var http = new XMLHttpRequest();
+          var url = '../react_app_api/android_webservices/student_app/common/secondaryAuth.php';
+          var params = 'nick=' + xuser + '&Method=getContacts&Method2=sendOTP&code=' + cliname;
+          http.open('POST', url, true);
+
+          //Send the proper header information along with the request
+          http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+          http.onreadystatechange = function() { //Call a function when the state changes.
+            if (http.readyState == 4 && http.status == 200) {
+              var myArr = JSON.parse(http.responseText);
+              if (myArr.login.status) {
+                var xr = document.getElementById("otpInputtr");
+                if (xr.style.display === "none") {
+                  xr.style.display = "block";
+                  document.getElementById("otplogin").innerHTML = "Verify";
+                  Command: toastr["success"]("Please enter the OTP (One Time Password) sent to +91-" + myArr.contact)
+
+                  // alert("Please enter the OTP (One Time Password) sent to +91-"+myArr.contact);
+                }
+
+              } else {
+                Command: toastr["error"]("Invalid OTP")
+              }
+            }
+          }
+          http.send(params);
+        }
+      }
+
+    }
+
+    //    function renderButton() {
+    //   gapi.signin2.render('my-signin2', {
+    //     'scope': 'profile email',
+    //     'width': 240,
+    //     'height': 50,
+    //     'longtitle': true,
+    //     'theme': 'dark',
+    //     'onsuccess': onSuccess,
+    //     'onfailure': onFailure
+    //   });
+    // }
+
+    function onSignIn(googleUser) {
+
+              var profile = googleUser.getBasicProfile();
+        // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        // console.log('Name: ' + profile.getName());
+        // console.log('Image URL: ' + profile.getImageUrl());
+        // console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+        $.post("checkuser1.php", {
+            email: profile.getEmail(),
+            method: "gAuth"
+          },
+          function(data, status, xhr) {
+            // console.log(data);
+            var obj = JSON.parse(data);
+
+            if (obj['status'] == 'failed') {
+              var auth2 = gapi.auth2.getAuthInstance();
+              auth2.signOut().then(function() {
+                console.log('User signed out.');
+                // location.href = obj['page']+'?errormessage='+obj['error'];
+
+              });
+            }
+            Command: toastr["success"]("Logged In Successfully.. Redirecting ...");
+
+            // setTimeout(function(){location.href = obj['page']; }, 1);
+
+
+          });
+          }
+
+
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function() {
+      console.log('User signed out.');
+      // location.href = obj['page']+'?errormessage='+obj['error'];
+
+    });
+  </script>
+
+
+
+</body></html>

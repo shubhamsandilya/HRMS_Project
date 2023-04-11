@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+:root {
+  --bgOrange: #e84949;
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7f00ff;
+  --card2-gradient-color2: #e100ff;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
+  --main-color: #8cacaa;
+}
+/***    Landing Page    ***/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  position:relative; 
+}
+
+video {
+  position:absolute ;
+  top: 0;
+  /* bottom: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* z-index: -10; */
+}
+.content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.landing-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--card3-gradient-color2);
+}
+.Topic {
+  font-size: 2rem;
+  transform: scale(1.5);
+  font-weight: bolder;
+  color: #11998e;
+}
+
+/* Course Section */
+.course-section{
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+   flex-wrap: wrap;
+}
+.row{
+  /* max-width: px; */
+  height: 100%;
+  margin: 0 auto;
+}
+.card-img{
+  height: 20px;
+  width: 30%;
+}
+.serviceBox {
+  color:var(--main-color);
+  background: var(--main-color);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 70px 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  
+}
+.serviceBox:before {
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 130px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+ .serviceBox .title {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 7px;
+}
+.serviceBox .description {
+  color: #888;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+  margin: 0 0 15px;
+}
+.serviceBox .service-icon {
+  font-size: 40px;
+  line-height: 40px;
+}
+.serviceBox.yellow {
+  --main-color: #f8b501;
+}
+.serviceBox.red {
+  --main-color: #f54646;
+}
+.serviceBox.purple {
+  --main-color: #920c60;
+}
+@media only screen and (max-width: 1199px) {
+      .serviceBox {
+    margin: 0 0 30px;
+  }
+}
+.shubham-12{
+  background-image: url("./assets/images/instant-settlement-bg.svg");
+}
+.shubham-12:hover{
+  background-image: url("./assets/images/instant-settlement-bghover.svg");
+}
+
