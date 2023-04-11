@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/HRMS_Project/static/css/main.6bd0fdc7.chunk.css",
+    "main.js": "/HRMS_Project/static/js/main.abb6d89f.chunk.js",
+    "main.js.map": "/HRMS_Project/static/js/main.abb6d89f.chunk.js.map",
+    "runtime~main.js": "/HRMS_Project/static/js/runtime~main.267fdbc1.js",
+    "runtime~main.js.map": "/HRMS_Project/static/js/runtime~main.267fdbc1.js.map",
+    "static/css/2.28b2400e.chunk.css": "/HRMS_Project/static/css/2.28b2400e.chunk.css",
+    "static/js/2.8ef2e8e1.chunk.js": "/HRMS_Project/static/js/2.8ef2e8e1.chunk.js",
+    "static/js/2.8ef2e8e1.chunk.js.map": "/HRMS_Project/static/js/2.8ef2e8e1.chunk.js.map",
+    "static/js/3.2bfceeaf.chunk.js": "/HRMS_Project/static/js/3.2bfceeaf.chunk.js",
+    "static/js/3.2bfceeaf.chunk.js.map": "/HRMS_Project/static/js/3.2bfceeaf.chunk.js.map",
+    "index.html": "/HRMS_Project/index.html",
+    "precache-manifest.06790e77fdecffaf13a322e1f80bd164.js": "/HRMS_Project/precache-manifest.06790e77fdecffaf13a322e1f80bd164.js",
+    "service-worker.js": "/HRMS_Project/service-worker.js",
+    "static/css/2.28b2400e.chunk.css.map": "/HRMS_Project/static/css/2.28b2400e.chunk.css.map",
+    "static/css/main.6bd0fdc7.chunk.css.map": "/HRMS_Project/static/css/main.6bd0fdc7.chunk.css.map",
+    "static/media/Home.css": "/HRMS_Project/static/media/bck.24122617.jpg",
+    "static/media/cutm.m4v": "/HRMS_Project/static/media/cutm.63e64feb.m4v",
+    "static/media/App.css": "/HRMS_Project/static/media/instant-settlement-bg.7de2538f.svg",
+    "static/media/instant-settlement-bghover.svg": "/HRMS_Project/static/media/instant-settlement-bghover.921e34b1.svg"
+  }
+}
